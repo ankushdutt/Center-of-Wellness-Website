@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400&display=swap');
 .navbar {
     height: 60px;
     background-color: #00B0FF;
@@ -43,17 +43,18 @@ a.navbar-item:hover:before, a.navbar-item:focus:before, a.navbar-item:hover:afte
    padding-top: 100px;
 }
 
-.hero-text {
-    font-family: Open Sans;
-    padding-top: 150px;
-    padding-left: 20px;
+.hero-text {  
+    padding: 150px 20px;
  }
 
-.title {
-     color: #00B0FF;
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: #00B0FF;
 }
 
-h4 {
+h4, li {
     padding-top: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -62,6 +63,7 @@ h4 {
 }
 
 .button {
+    font-family: 'Roboto', sans-serif;
     background: #00B0FF;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     border: 0;
@@ -69,6 +71,8 @@ h4 {
     color: white;
     font-weight: 500;
     transition: ease-in-out 200ms;
+    margin-top: 30px;
+    height: 50px;
 }
 
 .button:hover {
@@ -95,10 +99,10 @@ blockquote {
 }
 
 h2 {
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
+    font-weight: 300;
+    font-size: 42px;
     line-height: 54px;
     text-align: center;
     padding: 20px;
@@ -108,10 +112,11 @@ h2 {
     border: 0.5px solid rgba(0, 0, 0, 0.25);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
+    margin: 0px 40px;
 }
 
 h3 {
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 33px;
@@ -124,11 +129,16 @@ h3 {
 }
 
 .card-title {
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 31px;
     line-height: 42px;
     color: #FFFFFF;
     background-color: #00B0FF;
     text-align: center;
     padding: 15px 0;
+}
+
+.card-content {
+    border: 0.5px solid #00B0FF;
+    text-align: center;
 }
