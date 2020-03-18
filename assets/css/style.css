@@ -1,16 +1,50 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400&display=swap');
 .navbar {
-    background: #00B0FF;
+    height: 60px;
+    background-color: #00B0FF;
     box-shadow: 0px 0.1px 6px rgba(0, 0, 0, 0.22);
 }
-.navbar-item {
+a.navbar-item {
+    color: white;
+    padding: 0 1px;
+    margin: 0 15px;
+}
+a.navbar-item:hover {
+    background-color: #00B0FF;
     color: white;
 }
-.hero-top {
+/* Navber Link Hover Animation */
+ a.navbar-item:before, a.navbar-item:after {
+	 content: '';
+	 position: absolute;
+	 bottom: 10px;
+	 left: 0;
+	 right: 0;
+	 height: 1px;
+	 background-color: white;
+}
+a.navbar-item:before {
+	 opacity: 0;
+	 transform: translateY(-3px);
+	 transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+}
+a.navbar-item:after {
+	 opacity: 0;
+	 transform: translateY(3px);
+	 transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+a.navbar-item:hover:before, a.navbar-item:focus:before, a.navbar-item:hover:after, a.navbar-item:focus:after {
+	 opacity: 1;
+	 transform: translateY(0);
+}
+/* Animation End */
+
+.hero-image {
    padding-top: 100px;
 }
 
-.hero-title {
+.hero-text {
+    font-family: Open Sans;
     padding-top: 150px;
     padding-left: 20px;
  }
@@ -40,3 +74,29 @@
     color: #00B0FF;
 }
 
+blockquote {
+    font-family: Vidaloka;
+    font-size: 36px;
+    text-align: center;
+    border-left: 3px solid rgba(0, 0, 0, 0.48);
+    padding: 63px 4px;
+    padding-left: 0;
+    height: 180px;
+    width: 1200px;
+    margin: auto
+}
+
+.author {
+    text-align: right;
+    font-size: 18px;
+    padding-right: 100px;
+}
+
+.body-title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+}
