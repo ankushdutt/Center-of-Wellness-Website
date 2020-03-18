@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:300,400&display=swap');
 .navbar {
     height: 60px;
     background-color: #00B0FF;
@@ -53,10 +53,12 @@ a.navbar-item:hover:before, a.navbar-item:focus:before, a.navbar-item:hover:afte
      color: #00B0FF;
 }
 
-.subtitle {
+h4 {
     padding-top: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    text-align: left;
+    font-size: 24px;
 }
 
 .button {
@@ -92,11 +94,41 @@ blockquote {
     padding-right: 100px;
 }
 
-.body-title {
+h2 {
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
     line-height: 54px;
     text-align: center;
+    padding: 20px;
+}
+
+.card {
+    border: 0.5px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 45px;
+    margin-top: 20px;
+}
+
+.blog-image {
+    margin: 200px 50px;
+}
+
+.card-title {
+    font-family: Open Sans;
+    font-size: 31px;
+    line-height: 42px;
+    color: #FFFFFF;
+    background-color: #00B0FF;
+    text-align: center;
+    padding: 15px 0;
 }
