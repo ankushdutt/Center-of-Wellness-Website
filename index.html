@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hello Bulma!</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -30,13 +32,30 @@
 
       <div class="navbar-menu" id="navbarBurger">
         <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-item">
+              Resources
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                E-Books
+              </a>
+              <a class="navbar-item">
+                Stories
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div>
           <a class="navbar-item">
             Desktop Software
           </a>
-          <a class="navbar-item">
-            Assets
-          </a>
-          <a class="navbar-item">
+          <a class="navbar-item" href="/contacts.html">
             Contact Details
           </a>
           <a class="navbar-item">
@@ -51,26 +70,40 @@
   <!-- ----------------------------------CONTAINER-START---------------------------------- -->
   <div class="container">
     <!-- -----------------HERO----------------- -->
-    <div class="columns">
-      <div class="column hero-text">
-        <h1>Center of Wellness and Positive Health</h1>
-        <h4>This is h4, ac iaculis nibh. Vestibulum congue mi infer mentum fringilla. <br> See more at About Us </h4>
-        <button class="button">Ask a question</button>
-      </div>
-      <div class="column hero-image">
-        <img src="/assets/image-svg/hero-image.svg">
+    <div class="hero" data-aos="fade">
+      <div class="columns">
+        <div class="column hero-text">
+          <h1>Center of Wellness and Positive Health</h1>
+          <h4>This is h4, ac iaculis nibh. Vestibulum congue mi infermentumfringilla. <br> See more at About Us </h4>
+          <button class="button">Ask a question</button>
+        </div>
+        <div class="column hero-image">
+          <img src="/assets/image-svg/hero-image.svg">
+        </div>
       </div>
     </div>
     <hr>
+    <!-- -----------------GOALS AND OBJECTIVES----------------- -->
+    <h1>FILLER TEXT FOR GOALS AND OBJECTIVES</h1>
+    <br> <br> <br>
 
+
+
+
+
+
+
+
+
+
+    
     <!-- -----------------QUOTE----------------- -->
-    <blockquote>“Morbi velit nisl, tincidunt vel rhoncus eget, eleifend vel lacussit amet.”<div class="author">- John Oliver</div></blockquote>
-    <hr>
+    <blockquote data-aos="fade-left">“Morbi velit nisl, tincidunt vel rhoncus eget, eleifend vel lacussit amet.”<div class="author">- John Oliver</div></blockquote>
 
     <!-- -----------------CARDS----------------- -->
     <div class="columns is-vcentered">
       <div class="column is-half">
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <div class="card-title">
             Upcoming Events:
           </div>
@@ -84,7 +117,7 @@
         </div>
       </div>
       <div class="column is-half">
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <div class="card-title">
             Recent Past Activities:
           </div>
@@ -93,7 +126,6 @@
             <li>18 March - Yoga</li>
             <li>18 March - Yoga</li>
             <li>18 March - Yoga</li>
-
             <button class="button">All Activities and Videos</button>
           </div>
         </div>
@@ -102,7 +134,7 @@
 
     <!-- -----------------ARTICLE----------------- -->
     <h2>Featured Article</h2>
-    <div class="card">
+    <div class="card" data-aos="fade-up">
       <div class="columns">
         <div class="column is-one-quarter blog-image">
           <img src="/assets/image-svg/blog.svg">
@@ -110,7 +142,21 @@
         <div class="column">
           <h3>How to stay away from COVID-19</h3>
           <h4>
-            This is h4
+            <b>Wash your hands frequently</b> <br>
+            Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.
+            <br>
+            Why? Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands.
+            <br>
+            <br>
+            <b>Maintain social distancing</b> <br>
+            Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.
+            <br>
+            Why? When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person coughing has the disease.
+            <br>
+            <br>
+            <b>Avoid touching eyes, nose and mouth</b> <br>
+            Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick. <br>
+            <div class="author">Source: <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public">WHO</a> </div>
           </h4>
         </div>
       </div>
@@ -132,4 +178,5 @@
 
 <!-- -----------------JAVASCRIPT----------------- -->
 <script src="/assets/javascript/script.js"></script>
+
 </html>
