@@ -4,11 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Bulma!</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Contact Details</title>
+  <link rel="stylesheet" href="assets/css/bulma.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/bulma.purified.css"> -->
+  <link href="assets/css/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="assets/javascript/aos.js"></script>
 </head>
 
 <body>
@@ -19,7 +21,7 @@
 
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          CWPH
+          CWPH (Logo)
         </a>
 
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
@@ -32,26 +34,9 @@
 
       <div class="navbar-menu" id="navbarBurger">
         <div class="navbar-end">
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-item">
-              Resources
-            </a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
-                E-Books
-              </a>
-              <a class="navbar-item">
-                Stories
-              </a>
-              <a class="navbar-item">
-                Contact
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item">
-                Report an issue
-              </a>
-            </div>
-          </div>
+          <a class="navbar-item">
+            Resources
+          </a>
           <a class="navbar-item">
             Desktop Software
           </a>
@@ -67,8 +52,8 @@
     </div>
   </nav>
 
-  <!-- -----------------HERO-CONTACT----------------- -->
-  <div class="hero-contact">
+    <!-- -----------------HERO-CONTACT----------------- -->
+  <div class="hero-contact" data-aos="fade">
     <h4>HAVE A QUESTION?</h4>
     <h1>Contact Details</h1>
     <p>We’re here to help and answer any question you might have. </p>
@@ -76,10 +61,10 @@
 
   <!-- -----------------CONTACTS----------------- -->
   <div class="columns">
-    <div class="column contact-col">
-      <img src="/assets/image-svg/contact/user-cog-solid.svg">
+    <div class="column contact-col" data-aos="fade" data-aos-delay="200">
+      <img src="/assets/img/contact/user-cog-solid.svg">
       <div class="contact-info">
-        <h3>Staffs and Alumni</h3>
+        <h3>Staff and Alumni</h3>
         <div class="contact-details">
           Sunasi Ragha <br>
           +1 (917) 838-2194 <br>
@@ -97,8 +82,8 @@
         </div>
       </div>
     </div>
-    <div class="column contact-col">
-      <img src="/assets/image-svg/contact/male-solid.svg">
+    <div class="column contact-col" data-aos="fade" data-aos-delay="350">
+      <img src="/assets/img/contact/male-solid.svg">
       <div class="contact-info">
         <h3>Councellors</h3>
         <div class="contact-details">
@@ -118,8 +103,8 @@
         </div>
       </div>
     </div>
-    <div class="column contact-col">
-      <img src="/assets/image-svg/contact/chalkboard-teacher-solid.svg">
+    <div class="column contact-col" data-aos="fade" data-aos-delay="500">
+      <img src="/assets/img/contact/chalkboard-teacher-solid.svg">
       <div class="contact-info">
         <h3>Faculty Members</h3>
         <div class="contact-details">
@@ -139,8 +124,8 @@
         </div>
       </div>
     </div>
-    <div class="column contact-col">
-      <img src="/assets/image-svg/contact/user-edit-solid.svg">
+    <div class="column contact-col" data-aos="fade" data-aos-delay="650">
+      <img src="/assets/img/contact/user-edit-solid.svg">
       <div class="contact-info">
         <h3>Student Members</h3>
         <div class="contact-details">
@@ -161,9 +146,18 @@
       </div>
     </div>
   </div>
+
+<!-- -----------------FOOTER----------------- -->
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      Designed and developed by <a href="https://github.com/ankushdutt">Ankush Dutt</a>.
+    </p>
+  </div>
+</footer>
 </body>
 
 <!-- -----------------JAVASCRIPT----------------- -->
-<script src="/assets/javascript/script.js"></script>
+<script src="assets/javascript/script.js"></script>
 
 </html>

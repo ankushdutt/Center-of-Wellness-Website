@@ -4,11 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Bulma!</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>CWPH</title>
+  <link rel="stylesheet" href="assets/css/bulma.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/bulma.purified.css"> -->
+  <link href="assets/css/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="assets/javascript/aos.js"></script>
 </head>
 
 <body>
@@ -19,7 +21,7 @@
 
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          CWPH
+          CWPH (Logo)
         </a>
 
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
@@ -32,26 +34,9 @@
 
       <div class="navbar-menu" id="navbarBurger">
         <div class="navbar-end">
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-item">
-              Resources
-            </a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
-                E-Books
-              </a>
-              <a class="navbar-item">
-                Stories
-              </a>
-              <a class="navbar-item">
-                Contact
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item">
-                Report an issue
-              </a>
-            </div>
-          </div>
+          <a class="navbar-item">
+            Resources
+          </a>
           <a class="navbar-item">
             Desktop Software
           </a>
@@ -72,13 +57,13 @@
     <!-- -----------------HERO----------------- -->
     <div class="hero" data-aos="fade">
       <div class="columns">
-        <div class="column hero-text">
+        <div class="column hero-text is-half">
           <h1>Center of Wellness and Positive Health</h1>
           <h4>This is h4, ac iaculis nibh. Vestibulum congue mi infermentumfringilla. <br> See more at About Us </h4>
           <button class="button">Ask a question</button>
         </div>
         <div class="column hero-image">
-          <img src="/assets/image-svg/hero-image.svg">
+          <img src="assets/img/hero-image.svg">
         </div>
       </div>
     </div>
@@ -101,7 +86,7 @@
     <blockquote data-aos="fade-left">“Morbi velit nisl, tincidunt vel rhoncus eget, eleifend vel lacussit amet.”<div class="author">- John Oliver</div></blockquote>
 
     <!-- -----------------CARDS----------------- -->
-    <div class="columns is-vcentered">
+    <div class="columns">
       <div class="column is-half">
         <div class="card" data-aos="fade-up">
           <div class="card-title">
@@ -133,11 +118,11 @@
     </div>
 
     <!-- -----------------ARTICLE----------------- -->
-    <h2>Featured Article</h2>
+    <h2 data-aos="fade-up">Featured Article</h2>
     <div class="card" data-aos="fade-up">
       <div class="columns">
         <div class="column is-one-quarter blog-image">
-          <img src="/assets/image-svg/blog.svg">
+          <img src="/assets/img/blog.svg">
         </div>
         <div class="column">
           <h3>How to stay away from COVID-19</h3>
@@ -175,6 +160,6 @@
 </body>
 
 <!-- -----------------JAVASCRIPT----------------- -->
-<script src="/assets/javascript/script.js"></script>
+<script src="assets/javascript/script.js"></script>
 
 </html>

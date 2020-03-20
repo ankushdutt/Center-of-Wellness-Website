@@ -7,10 +7,11 @@
 
 h1 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 48px;
-    font-weight: 300;
+    font-size: 64px;
     padding-top: 50px;
-    color: #00B0FF;
+    padding-right: 40px;
+    color: #009DE6;
+    /* letter-spacing: 0.05em; */
 }
 
 h2 {
@@ -40,21 +41,20 @@ h4, li {
 
 .navbar {
     height: 60px;
-    background-color: #00B0FF;
+    background: #00B0FF;
     box-shadow: 0px 0.1px 6px rgba(0, 0, 0, 0.22);
 }
 a.navbar-item, .navbar-link {
     color: white;
     padding: 0 1px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     margin: 0 15px;
+    letter-spacing: 0.05em;
 }
 a.navbar-item:hover, a.navbar-item:focus {
-    background-color: #00B0FF;
+    background: transparent;
     color: white;
-}
-
-.navbar-dropdown .navbar-item {
-    color: #00B0FF;
 }
 
 /* Navber Link Hover Animation */
@@ -92,16 +92,18 @@ a.navbar-item:hover:before, a.navbar-item:focus:before, a.navbar-item:hover:afte
  }
 
 .button {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background: #00B0FF;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     border: 0;
-    border-radius: 2px;
+    border-radius: 5px;
     color: white;
-    font-weight: 500;
+    font-weight: 800;
     transition: ease-in-out 200ms;
     margin-top: 30px;
+    margin-bottom: 20px;
     height: 50px;
+    letter-spacing: 0.05em;
 }
 
 .button:hover {
@@ -132,17 +134,11 @@ blockquote {
 
 .card {
     border: 0.5px solid rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 30px;
     margin-bottom: 70px;
-    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-
-.column .card {
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
 
 .blog-image {
     margin: 100px 50px;
@@ -156,22 +152,20 @@ blockquote {
     background-color: #00B0FF;
     text-align: center;
     padding: 15px 0;
-    border-radius: 10px 10px 0px 0px;
 }
 
 .card-content {
-    border: 0.5px solid #00B0FF;
     text-align: center;
-    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
 }
 
 /* -------------CONTACT PAGE------------- */
 .hero-contact {
-    background-image: linear-gradient(rgba(0, 28, 70, 0.67), rgba(0, 28, 70, 0.67)), url("../image-svg/contact.png");
+    background-image: linear-gradient(rgba(0, 28, 70, 0.67), rgba(0, 28, 70, 0.67)), url("../img/contact.png");
     text-align: center;
     height: 506px;
     background-position: center;
-    box-shadow: 0px 4px 6px rgba(0, 3, 47, 0.568);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
 }
 
@@ -189,6 +183,7 @@ blockquote {
 .hero-contact h1 {
     padding-top: 0px;
     padding-bottom: 10px;
+    color: #00B0FF;
 }
 
 .hero-contact p {
@@ -204,7 +199,7 @@ blockquote {
 
 .contact-col {
     text-align: center;
-    margin-top: 50px;
+    margin: 50px 0px;
 }
 
 .contact-details {
