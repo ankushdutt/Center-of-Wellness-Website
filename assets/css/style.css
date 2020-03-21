@@ -232,25 +232,16 @@ blockquote {
     position: relative;
 }
 
-.hero-text-about {
+.hero-about h1 {
     text-align: center;
     position: absolute;
     bottom: 18%;
     left: 50%;
     transform: translateX(-50%);
-}
-
-.hero-about h1 {
     color: white;
-    padding-top: 650px;
     font-weight: 300;
 }
 
-.hero-about h3 {
-    font-weight: 600;
-    padding-top: 20px;
-    color: white;
-}
 
 .card-about {
     text-align: center;
@@ -259,8 +250,8 @@ blockquote {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 38px;
     height: auto;
-    max-width: 1400px;
     margin: auto;
+    max-width: 1400px;
     padding: 100px 80px;
     margin-top: -100px;
     margin-bottom: 100px;
@@ -272,7 +263,7 @@ blockquote {
     font-family: Roboto;
     font-size: 29px;
     line-height: 125.2%;
-    margin-right: 50px;
+    /* margin-right: 20px; */
 }
 
 .about-right {
@@ -285,10 +276,12 @@ blockquote {
 }
 
 .about-svg {
-    margin: 80px;
-    margin-bottom: 70px;
     width: 208px;
     height: 161px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 /* ----------------------------------RESPONSIVE---------------------------------- */
@@ -303,6 +296,8 @@ blockquote {
 
 /* -----------------MOBILE----------------- */
 @media only screen and (max-width: 480px) {
+
+    /* ----HOME---- */
     h1 {
         padding-top: 0px;
         margin-top: 0px;
@@ -344,6 +339,11 @@ blockquote {
         font-size: 15px;
     }
 
+    .card {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     .card-title {
         font-size: 25px;
     }
@@ -360,5 +360,34 @@ blockquote {
         padding: 30px;
         text-align: justify;
     }
+
+    /* ----ABOUT---- */
+    .hero-about h1 {
+        text-shadow: 1px 1px 2px black;
+        bottom: 25%;
+        font-weight: bold;
+    }
+
+    .about-left {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .about-right {
+        font-size: 18px;
+    }
+
+    .about-svg {
+        margin-bottom: 40px;
+    }
+
+    .card-about {
+        padding: 30px 20px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
 }
 
