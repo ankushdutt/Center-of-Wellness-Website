@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
 
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 64px;
-    padding-top: 50px;
-    padding-right: 40px;
-    color: #009DE6;
-    /* letter-spacing: 0.05em; */
+    color: #00B0FF;
 }
 
 h2 {
@@ -57,6 +56,8 @@ a.navbar-item:hover, a.navbar-item:focus {
     color: white;
 }
 
+
+
 /* Navber Link Hover Animation */
  a.navbar-item:before, a.navbar-item:after {
 	 content: '';
@@ -100,8 +101,8 @@ a.navbar-item:hover:before, a.navbar-item:focus:before, a.navbar-item:hover:afte
     color: white;
     font-weight: 800;
     transition: ease-in-out 200ms;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
     height: 50px;
     letter-spacing: 0.05em;
 }
@@ -112,24 +113,27 @@ a.navbar-item:hover:before, a.navbar-item:focus:before, a.navbar-item:hover:afte
     background-position: right center;
 }
 
+.quote {
+    display: table; 
+    width: 100%; 
+    height: 200px; 
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
 blockquote {
+    display: table-cell;
     font-family: Vidaloka;
     font-size: 36px;
     text-align: center;
     border-left: 3px solid rgba(0, 0, 0, 0.48);
-    padding: 63px 4px;
-    padding-left: 0;
-    height: 180px;
-    width: 1200px;
-    margin: auto;
-    margin-bottom: 50px;
+    vertical-align: middle;
 }
 
 .author {
     text-align: right;
     font-size: 18px;
     padding-right: 100px;
-    padding-bottom: 20px;
 }
 
 .card {
@@ -138,6 +142,10 @@ blockquote {
     margin-bottom: 70px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.scroll {
+    overflow: scroll;
 }
 
 .blog-image {
@@ -155,8 +163,13 @@ blockquote {
 }
 
 .card-content {
-    text-align: center;
-    padding: 10px;
+    text-align: left;
+    padding: 10px 40px;
+    height: 400px;
+}
+
+.scroll {
+    overflow: scroll;
 }
 
 /* -------------CONTACT PAGE------------- */
@@ -219,10 +232,10 @@ blockquote {
     position: relative;
 }
 
-.hero-text {
+.hero-text-about {
     text-align: center;
     position: absolute;
-    bottom: 4%;
+    bottom: 18%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -272,8 +285,80 @@ blockquote {
 }
 
 .about-svg {
-    /* margin: 80px 170px; */
+    margin: 80px;
     margin-bottom: 70px;
     width: 208px;
     height: 161px;
 }
+
+/* ----------------------------------RESPONSIVE---------------------------------- */
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        background-color: #00B0FF;
+        box-shadow: 0 8px 16px rgba(10,10,10,.1);
+        padding: 1rem 0;
+        text-align: center;
+    }
+}
+
+/* -----------------MOBILE----------------- */
+@media only screen and (max-width: 480px) {
+    h1 {
+        padding-top: 0px;
+        margin-top: 0px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 25px;
+        border-bottom: 3px solid rgba(0, 0, 0, 0.294);
+    }
+
+    h4, li {
+        font-size: 18px;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin-top: -50px;
+    }
+
+    .quote {
+        margin-top: 0px;
+    }
+
+    blockquote {
+        font-size: 30px;
+    }
+
+    .author {
+        padding-right: 20px;
+        font-size: 15px;
+    }
+
+    .card-title {
+        font-size: 25px;
+    }
+
+    .card-content {
+        height: 430px;
+    }
+
+    .blog-image {
+        display: none;
+    }
+
+    .blog-text {
+        padding: 30px;
+        text-align: justify;
+    }
+}
+
