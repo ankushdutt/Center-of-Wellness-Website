@@ -53,7 +53,7 @@
   </nav>
 
   <!-- -----------------HERO----------------- -->
-  <div class="hero-resources">
+  <div class="hero-resources" data-aos="fade">
     <div class="columns">
       <div class="column hero-r-img is-half">
         <img src="/assets/img/undraw_online_articles_79ff.svg">
@@ -64,110 +64,113 @@
     </div>
   </div>
 
-  <!-- -----------------TABS----------------- -->
-  <div class="tabs is-centered">
-    <ul>
-      <li id="rp" class="is-active">
-        <a>
-          <!-- <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span> -->
-          <span >Posts</span>
-        </a>
-      </li>
-      <li id="re">
-        <a>
-          <span >E-Books</span>
-        </a>
-      </li>
-      <li id="rs">
-        <a>
-          <span>Stories</span>
-        </a>
-      </li>
-    </ul> 
+  <!-- -----------------CONTAINER-START----------------- -->
+  <div class="container" data-aos="fade">
+
+    <!-- -----------------TABS----------------- -->
+    <div class="tabs is-centered">
+      <ul>
+        <li id="rp" class="is-active">
+          <a>
+            <span >Posts</span>
+          </a>
+        </li>
+        <li id="re">
+          <a>
+            <span >E-Books</span>
+          </a>
+        </li>
+        <li id="rs">
+          <a>
+            <span>Stories</span>
+          </a>
+        </li>
+      </ul> 
+    </div>
+
+    <!-- -----------------TABLE----------------- -->
+
+    <!-- ----POSTS---- -->
+    <div class="container r-posts">
+      <table class="table is-fullwidth is-striped">
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Date</th>
+        </tr>
+        <tr>
+          <td>Post-1</td>
+          <td>asdf</td>
+          <td>22 March 2020</td>
+        </tr>
+        <tr>
+          <td>Big title for no reason</td>
+          <td>asdf</td>
+          <td>22 March 2020</td>
+        </tr>
+        <tr>
+          <td>HEllo World</td>
+          <td>asdf</td>
+          <td>22 March 2020</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- ----EBOOKS---- -->
+    <div class="container r-ebooks hidden">
+      <table class="table is-fullwidth is-striped">
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td>HEllo World</td>
+          <td>asdf</td>
+          <td>22 March 2020</td>
+        </tr>
+        <tr>
+          <td>ebook</td>
+          <td>asdf</td>
+          <td>22 March 2020</td>
+        </tr>
+        <tr>
+          <td>HEllo World</td>
+          <td>asdf</td>
+          <td>22 March 2020</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- ----STORIES---- -->
+    <div class="container r-stories hidden">
+      <table class="table is-fullwidth is-striped">
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Date</th>
+        </tr>
+        <tr>
+          <td>HEllo World</td>
+          <td>not asdf</td>
+          <td>22 March 2020</td>
+        </tr>
+        <tr>
+          <td>HEllo World</td>
+          <td>asdf</td>
+          <td>22 March 2020</td>
+        </tr>
+        <tr>
+          <td>HEllo World</td>
+          <td>asdf</td>
+          <td>22 March 2020</td>
+        </tr>
+      </table>
+    </div>
   </div>
+  <!-- -----------------CONTAINER-END----------------- -->
 
-  <!-- -----------------TABLE----------------- -->
-
-  <!-- ----POSTS---- -->
-  <div class="container r-posts">
-    <table class="table is-fullwidth">
-      <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Date</th>
-      </tr>
-      <tr>
-        <td>Post-1</td>
-        <td>asdf</td>
-        <td>22 March 2020</td>
-      </tr>
-      <tr>
-        <td>HEllo World</td>
-        <td>asdf</td>
-        <td>22 March 2020</td>
-      </tr>
-      <tr>
-        <td>HEllo World</td>
-        <td>asdf</td>
-        <td>22 March 2020</td>
-      </tr>
-    </table>
-  </div>
-
-  <!-- ----EBOOKS---- -->
-  <div class="container r-ebooks hidden">
-    <table class="table is-fullwidth">
-      <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Year</th>
-      </tr>
-      <tr>
-        <td>HEllo World</td>
-        <td>asdf</td>
-        <td>22 March 2020</td>
-      </tr>
-      <tr>
-        <td>ebook</td>
-        <td>asdf</td>
-        <td>22 March 2020</td>
-      </tr>
-      <tr>
-        <td>HEllo World</td>
-        <td>asdf</td>
-        <td>22 March 2020</td>
-      </tr>
-    </table>
-  </div>
-
-  <!-- ----STORIES---- -->
-  <div class="container r-stories hidden">
-    <table class="table is-fullwidth">
-      <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Date</th>
-      </tr>
-      <tr>
-        <td>HEllo World</td>
-        <td>not asdf</td>
-        <td>22 March 2020</td>
-      </tr>
-      <tr>
-        <td>HEllo World</td>
-        <td>asdf</td>
-        <td>22 March 2020</td>
-      </tr>
-      <tr>
-        <td>HEllo World</td>
-        <td>asdf</td>
-        <td>22 March 2020</td>
-      </tr>
-    </table>
-  </div>
-
-
-
+  <br> <br> <br> <br>
 
   <!-- -----------------FOOTER----------------- -->
   <footer class="footer">

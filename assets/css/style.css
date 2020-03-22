@@ -297,7 +297,7 @@ blockquote {
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 96px;
+    font-size: 6vw;
     line-height: 131px;
     text-align: center;
     letter-spacing: 0.16em;
@@ -319,7 +319,7 @@ blockquote {
 @media only screen and (max-width: 480px) {
 
     /* ----HOME---- */
-    h1 {
+    h1, .hero-r-text {
         padding-top: 0px;
         margin-top: 0px;
         font-size: 40px;
