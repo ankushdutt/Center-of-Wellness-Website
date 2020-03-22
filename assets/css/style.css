@@ -152,6 +152,10 @@ blockquote {
     margin: 100px 50px;
 }
 
+.blog-text {
+    padding: 30px;
+}
+
 .card-title {
     font-family: 'Open Sans', sans-serif;
     font-size: 31px;
