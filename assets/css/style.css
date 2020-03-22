@@ -113,10 +113,6 @@ a.navbar-item:hover:before, a.navbar-item:focus:before, a.navbar-item:hover:afte
     background-position: right center;
 }
 
-.light {
-    font-weight: 300;
-}
-
 .quote {
     display: table; 
     width: 100%; 
@@ -271,7 +267,6 @@ blockquote {
     font-family: Roboto;
     font-size: 29px;
     line-height: 125.2%;
-    /* margin-right: 20px; */
 }
 
 .about-right {
@@ -314,26 +309,31 @@ blockquote {
 }
 
 /* -------------Post Page------------- */
+.post-title {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.post-author {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5)
+}
+
 .post {
     font-family: 'Open Sans', sans-serif;
     margin: auto;
     margin-bottom: 40px;
     padding: 30px 20px;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-    max-width: 700px;
+    max-width: 750px;
     letter-spacing: 0.025em;
-    line-height: 45px;
+    line-height: 35px;
     border-bottom: 3px solid rgba(0, 0, 0, 0.294);
 }
 
 .post::first-letter {
     font-weight: 400;
     font-size: 48px;
-}
-
-.author-post {
-    font-size: 18px;
-    padding-left: 60px;
 }
 
 /* ----------------------------------RESPONSIVE---------------------------------- */
@@ -439,6 +439,10 @@ blockquote {
         margin-bottom: 50px;
         margin-right: 10px;
         margin-left: 10px;
+    }
+
+    .post::first-letter {
+        font-size: 30px;
     }
 }
 
