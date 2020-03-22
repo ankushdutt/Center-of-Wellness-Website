@@ -284,6 +284,27 @@ blockquote {
     margin-bottom: 100px;
 }
 
+/* -------------Resources Page------------- */
+.hidden {
+    display: none;
+}
+
+.hero-r-img {
+    padding-top: 60px;
+}
+
+.hero-r-text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 131px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    color: #00B0FF;
+    padding-top: 200px;
+}
+
 /* ----------------------------------RESPONSIVE---------------------------------- */
 @media screen and (max-width: 1023px) {
     .navbar-menu {

@@ -30,3 +30,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
   });
+
+document.getElementById("rp").addEventListener("click", myFunctionP)
+document.getElementById("rs").addEventListener("click", myFunctionS)
+document.getElementById("re").addEventListener("click", myFunctionE)
+
+var e = document.getElementsByClassName("r-ebooks")[0];
+var s = document.getElementsByClassName("r-stories")[0];
+var p = document.getElementsByClassName("r-posts")[0];
+
+function myFunctionP() {
+  rp.classList.add("is-active")
+  rs.classList.remove("is-active")
+  re.classList.remove("is-active")
+  e.classList.add("hidden")
+  s.classList.add("hidden")
+  p.classList.remove("hidden")
+}
+
+function myFunctionS() {
+  rs.classList.add("is-active")
+  rp.classList.remove("is-active")
+  re.classList.remove("is-active")
+  e.classList.add("hidden")
+  p.classList.add("hidden")
+  s.classList.remove("hidden")
+}
+
+function myFunctionE() {
+  re.classList.add("is-active")
+  rs.classList.remove("is-active")
+  rp.classList.remove("is-active")
+  s.classList.add("hidden")
+  p.classList.add("hidden")
+  e.classList.remove("hidden")
+}
